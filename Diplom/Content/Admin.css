@@ -1,0 +1,141 @@
+﻿BODY, TD {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left:20px;
+    font-family: Segoe UI, Verdana
+}
+
+
+H1 {
+    padding: .5em;
+    padding-top: 0;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-bottom: 2px solid gray;
+}
+
+DIV#content {
+    padding: .9em;
+}
+
+TABLE.Grid TD, TABLE.Grid TH {
+    border-bottom: 1px dotted gray;
+    text-align: left;
+}
+
+TABLE.Grid {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    TABLE.Grid TH.NumericCol, Table.Grid TD.NumericCol {
+        text-align: right;
+        padding-right: 1em;
+    }
+
+FORM {
+    margin-bottom: 0px;
+}
+
+DIV.Message {
+    background: gray;
+    color: White;
+    padding: .2em;
+    margin-top: .25em;
+}
+
+.field-validation-error {
+    color: red;
+    display: block;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid red;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: red;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+.editor-field {
+    margin-bottom: .8em;
+}
+
+.editor-label {
+    font-weight: bold;
+}
+
+    .editor-label:after {
+        content: ":"
+    }
+
+.text-box {
+    width: 25em;
+}
+
+.multi-line {
+    height: 5em;
+    font-family: Segoe UI, Verdana;
+}
+body.admin {
+    padding-top: 10px;
+}
+.textForDescription {
+    color: black;
+    font-family: 'Arial Black', Times, serif;
+}
+
+
+.tForPur {
+    padding-right: 20px;
+}
+.tablePur {
+    padding-right: 20px;
+    margin-right:20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #36c0d3;
+    padding: 10px;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    background-color: #139aa3;
+    color: #fff;
+}
+tr:nth-child(odd) {
+    background-color: #859b9c;
+}
+
+.buttonforadmin {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: #139aa3;
+    box-shadow: 0 -3px #36c0d3 inset;
+    transition: 0.5s;
+}
+
+    .buttonforadmin:hover {
+        background: #139aa3;
+    }
+
+    .buttonforadmin:active {
+        background: #36c0d3;
+        box-shadow: 0 3px #36c0d3 inset;
+    }

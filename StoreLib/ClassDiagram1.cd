@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="StoreLib.Concrete.EmailSettings">
+    <Position X="12.5" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAACAAABAQAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Concrete\EmailOrderProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StoreLib.Concrete.EmailOrderProcessor">
+    <Position X="9.5" Y="2.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAI=</HashCode>
+      <FileName>Concrete\EmailOrderProcessor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StoreLib.Concrete.EFProductRepository">
+    <Position X="3.25" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAgAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Concrete\EFProductRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="StoreLib.Abstract.IOrderProcessor">
+    <Position X="9.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Abstract\IOrderProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="StoreLib.Abstract.IProductRepository">
+    <Position X="3.25" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Abstract\IProductsRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

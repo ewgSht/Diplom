@@ -1,0 +1,14 @@
+﻿@model Diplom.Models.LoginViewModel
+
+@{
+    ViewBag.Title = "Admin: Log In";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h2>Вход в систему администрирования</h2>
+<p>Введите данные:</p>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    @Html.EditorForModel()
+    <p><input type="submit" value="Войти" /></p>
+}

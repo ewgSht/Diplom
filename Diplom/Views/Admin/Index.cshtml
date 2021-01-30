@@ -1,0 +1,33 @@
+﻿@model IEnumerable<StoreLib.Entities.Product>
+@{
+    ViewBag.Title = "Администрирование";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h1>Все продукты</h1>
+
+<div class="tForPur">
+    <table class="Grid textForDescription">
+        <tr>
+            <th>ID</th>
+            <th>Изделие</th>
+            <th class="NumericCol">Цена</th>
+            <th>Действие</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr class="textForDescription">
+                <td class="textForDescription">@item.ProductID</td>
+                <td class="textForDescription">@Html.ActionLink(item.Name, "Edit", new { item.ProductID })</td>
+                <td class="NumericCol textForDescription">@item.Price.ToString("c")</td>
+                <td class="textForDescription" width="50px">
+                    @using (Html.BeginForm("Delete", "Admin"))
+                    {
+                        @Html.Hidden("ProductID", item.ProductID)
+                        <input type="submit" value="Удалить" />
+                    }
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+<p>@Html.ActionLink("Добавить новый продукт", "Create",null, new { @class = "textForDescription" })</p>

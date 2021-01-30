@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Diplom.Controllers.AccountController">
+    <Position X="4" Y="0.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Controllers\AccountController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diplom.Controllers.AdminController">
+    <Position X="7.25" Y="0.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\AdminController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diplom.Controllers.CartController">
+    <Position X="10.5" Y="0.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAACBAAAAAAAAAEAAAAAAAAAAEEAAAAAACA=</HashCode>
+      <FileName>Controllers\CartController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diplom.Controllers.NavController">
+    <Position X="4" Y="3.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\NavController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Diplom.Controllers.ProductController">
+    <Position X="7.25" Y="3.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAACAAAAAAAAAAIQAAAAAAAAAAAAEAAAAAI=</HashCode>
+      <FileName>Controllers\ProductController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

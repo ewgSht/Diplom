@@ -1,0 +1,39 @@
+﻿@model StoreLib.Entities.ShippingDetails
+@{
+    ViewBag.Title = "Store: Checkout";
+}
+Пожалуйста введите ваши данные, для доставки!
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    <h2>Информация о заказчике:</h2>
+    <p>
+        Введите свое имя:
+    </p>
+    @Html.EditorFor(x => x.Name)
+    <p>
+        Введите свой адресс:
+    </p>
+    @Html.EditorFor(x => x.Adress)
+    <p>
+        Введите свой город:
+    </p>
+    @Html.EditorFor(x => x.City)
+    <p>
+        Введите свою страну:
+    </p>
+    @Html.EditorFor(x => x.Country)
+    <p>
+        Введите свой Email:
+    </p>
+    @Html.EditorFor(x => x.Email)
+    <p>
+        Введите свой Телефон:
+    </p>
+    @Html.EditorFor(x => x.Phone)
+
+    <p align="center">
+        <input class="actionButtons" type="submit" value="Подтвердить заказ" />
+    </p>
+}

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="StoreLib.Entities.Cart">
+    <Position X="0.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAgAAAAAACAAAAAABGAAA=</HashCode>
+      <FileName>Entities\Cart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StoreLib.Entities.CartLine">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Entities\Cart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StoreLib.Entities.Product">
+    <Position X="0.75" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAQAgAAAAAAAAAIQAAAAAAAAAAAABAAAACAA=</HashCode>
+      <FileName>Entities\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StoreLib.Entities.ShippingDetails">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAIAAAAAAQAAAoAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Entities\ShippingDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StoreLib.Entities.Purchases">
+    <Position X="4.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAgAAAAAAAAAAAAAAAAAAABAAAAIAAAAAE=</HashCode>
+      <FileName>Entities\Purchases.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

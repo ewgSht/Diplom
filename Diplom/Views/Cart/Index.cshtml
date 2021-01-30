@@ -1,0 +1,52 @@
+﻿@model Diplom.Models.CartIndexViewModel
+
+@{
+    ViewBag.Title = "Store: Your Cart";
+}
+<h2>Ваша корзина покупок</h2>
+<table width="90%" align="center">
+    <thead>
+        <tr>
+            <th align="center">Количество</th>
+            <th align="left">Продукт</th>
+            <th align="right">Цена за 1 изделие</th>
+            <th align="right">Общая цена</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var line in Model.Cart.Lines)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => line.Quantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => line.Product.Name)
+                </td>
+                <td>
+                    @(line.Product.Price.ToString("c"))
+                </td>
+                <td>
+                    @((line.Quantity * line.Product.Price).ToString("c"))
+                </td>
+                <td>
+                    @using (Html.BeginForm("RemoveFromCart", "Cart"))
+                    {
+                        @Html.Hidden("ProductId", line.Product.ProductID)
+                        @Html.HiddenFor(x => x.ReturnUrl)
+                        <input class="actionButtons" type="submit" value="Удалить" />
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4" align="right">Итого:@Model.Cart.ComputeTotalValue().ToString("c")</td>
+        </tr>
+    </tfoot>
+</table>
+<p align="center" class="actionButtons">
+    @Html.ActionLink("Назад к покупкам", "List","Product")
+    @Html.ActionLink("Оформить покупку", "Checkout")
+</p>

@@ -1,0 +1,44 @@
+﻿@model IEnumerable<StoreLib.Entities.Purchases>
+@{
+    ViewBag.Title = "Purchasses";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h1>Продажи магазина</h1>
+<div class="tForPur">
+    <table class="tablePur">
+        <tr>
+            <th>ID</th>
+            <th>Описание покупки</th>
+            <th>Имя покупателя</th>
+            <th>Телефон</th>
+            <th>Email</th>
+            <th>Дата покупки</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    <pre style="line-height:normal" class="textForDescription"> @Html.DisplayFor(modelItem => item.Description)</pre>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BuyersName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Phone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+            </tr>
+        }
+
+    </table>
+
+</div>
